@@ -5,15 +5,53 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base Apparel coming soon page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <main id="app" class="text-base">
-      We're coming soon Hello fellow shoppers! We're currently building our new
-      fashion store. Add your email below to stay up-to-date with announcements
-      and our launch deals. Email Address
+  <body class="bg-gradient-to-tr from-initialColorGradient1 to-finalColorGradient1">
+    <main id="app" class="text-base font-josefin ">
+      <div class="py-10 pl-8 w-2/6">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div><img src="./images/hero-mobile.jpg" alt="" /></div>
+      <div>
+        <h1
+          class="text-center uppercase text-4xl text-desaturatedRed font-light tracking-[.25em] pt-16 pb-8"
+        >
+          We're <br /><span class="text-darkGrayishRed font-semibold"
+            >coming <br />
+            soon</span
+          >
+        </h1>
+        <p class="text-center text-desaturatedRed text-sm px-8 pb-8">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div
+          class="border border-darkGrayishRed rounded-full flex justify-between items-center pl-6 pr-16 w-9/12 mx-auto relative"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            class="text-xs text-darkGrayishRed outline-none placeholder:text-desaturatedRed mt-4 mb-3 bg-transparent"
+          />
+          <img class="hidden" src="./images/icon-error.svg" alt="error" />
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-initialColorGradient2 to-finalColorGradient2 text-center px-6 py-3 rounded-full absolute -right-2 top-0 shadow-xl"
+          >
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+        <p class="hidden" for="email">Please provide a valid email</p>
+      </div>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
