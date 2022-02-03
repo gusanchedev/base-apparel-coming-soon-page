@@ -15,7 +15,7 @@ module.exports = {
         finalColorGradient2: "hsl(0, 74%, 74%)",
       },
       backgroundImage: {
-        desktop: "url('./images/bg-pattern-desktop.svg)",
+        desktop: "url('/images/bg-pattern-desktop.svg')",
       },
     },
   },
