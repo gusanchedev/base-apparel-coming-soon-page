@@ -6,7 +6,7 @@ const errorIcon = document.getElementById("error-icon");
 const emailErrorLabel = document.getElementById("email-error-label");
 const submitButton = document.getElementById("submit-button");
 
-const validEmailFormat = /^\D\w*[.]*\w*@\w*[.]\w*/;
+const validEmailFormat = /^\D\w*[.]*\w*@\w*[.]\w+\w+/;
 
 emailInput.addEventListener("focus", (e) => {
   errorIcon.classList.replace("block", "hidden");
