@@ -18,6 +18,7 @@ submitButton.addEventListener("click", (e) => {
   if (!emailInput.value) {
     emailContainer.style.borderColor = "hsl(0, 93%, 68%)";
     errorIcon.classList.replace("hidden", "block");
+    emailErrorLabel.classList.replace("hidden", "block");
   } else if (!validEmailFormat.test(emailInput.value)) {
     emailContainer.style.borderColor = "hsl(0, 93%, 68%)";
     errorIcon.classList.replace("hidden", "block");
